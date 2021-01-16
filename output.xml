@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.3 on win32)" generated="20210111 23:03:30.807" rpa="false">
+<suite id="s1" name="Windows" source="C:\Users\dcremers\Learn Robot Framework\Create Batch File &amp; Share Code\TestCases\Windows">
+<suite id="s1-s1" name="windowHandling" source="C:\Users\dcremers\Learn Robot Framework\Create Batch File &amp; Share Code\TestCases\Windows\windowHandling.robot">
+<test id="s1-s1-t1" name="Testing Window Handling">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${VAR1}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210111 23:03:31.452" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com'.</msg>
+<status status="PASS" starttime="20210111 23:03:31.452" endtime="20210111 23:03:39.893"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210111 23:03:39.893" endtime="20210111 23:03:42.187"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${VAR2}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210111 23:03:42.190" level="INFO">Opening browser 'Chrome' to base url 'https://www.udemy.com'.</msg>
+<status status="PASS" starttime="20210111 23:03:42.188" endtime="20210111 23:03:50.018"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210111 23:03:50.019" endtime="20210111 23:03:52.230"></status>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:03:52.230" endtime="20210111 23:03:52.231"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${urlA}</var>
+</assign>
+<msg timestamp="20210111 23:03:52.254" level="INFO">${urlA} = https://www.thetestingworld.com/</msg>
+<status status="PASS" starttime="20210111 23:03:52.231" endtime="20210111 23:03:52.254"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${urlA}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:03:52.255" endtime="20210111 23:03:52.256"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()="Login"]</arg>
+</arguments>
+<msg timestamp="20210111 23:03:52.257" level="INFO">Clicking element 'xpath://a[text()="Login"]'.</msg>
+<status status="PASS" starttime="20210111 23:03:52.256" endtime="20210111 23:03:53.721"></status>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:03:53.722" endtime="20210111 23:03:53.722"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${urlB}</var>
+</assign>
+<msg timestamp="20210111 23:03:53.736" level="INFO">${urlB} = https://www.udemy.com/</msg>
+<status status="PASS" starttime="20210111 23:03:53.723" endtime="20210111 23:03:53.736"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${urlB}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:03:53.737" endtime="20210111 23:03:53.737"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@name='q']</arg>
+<arg>Python</arg>
+</arguments>
+<msg timestamp="20210111 23:03:53.740" level="INFO">Typing text 'Python' into text field 'xpath://input[@name='q']'.</msg>
+<status status="PASS" starttime="20210111 23:03:53.739" endtime="20210111 23:03:54.002"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${VAR3}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210111 23:03:54.003" level="INFO">Opening browser 'Chrome' to base url 'https://robotframework.org'.</msg>
+<status status="PASS" starttime="20210111 23:03:54.003" endtime="20210111 23:04:02.389"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210111 23:04:02.391" endtime="20210111 23:04:04.609"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()="User Guide"]</arg>
+</arguments>
+<msg timestamp="20210111 23:04:04.620" level="INFO">Clicking element 'xpath://a[text()="User Guide"]'.</msg>
+<status status="PASS" starttime="20210111 23:04:04.619" endtime="20210111 23:04:05.034"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>Robot Framework</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:05.049" endtime="20210111 23:04:05.427"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${urlC}</var>
+</assign>
+<msg timestamp="20210111 23:04:05.445" level="INFO">${urlC} = https://robotframework.org/</msg>
+<status status="PASS" starttime="20210111 23:04:05.429" endtime="20210111 23:04:05.446"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${urlC}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:05.447" endtime="20210111 23:04:05.449"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>Robot Framework documentation</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:05.450" endtime="20210111 23:04:07.683"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${urlD}</var>
+</assign>
+<msg timestamp="20210111 23:04:07.697" level="INFO">${urlD} = http://robotframework.org/robotframework/#user-guide</msg>
+<status status="PASS" starttime="20210111 23:04:07.685" endtime="20210111 23:04:07.697"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${urlD}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:07.698" endtime="20210111 23:04:07.699"></status>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<assign>
+<var>@{list}</var>
+</assign>
+<msg timestamp="20210111 23:04:07.708" level="INFO">@{list} = [ CDwindow-2F8426D80B8B0DE048B05B9ACC773784 | CDwindow-4D49B583C224B761B88873E2650F472E ]</msg>
+<status status="PASS" starttime="20210111 23:04:07.700" endtime="20210111 23:04:07.708"></status>
+</kw>
+<kw name="${win} IN [ @{list} ]" type="for">
+<kw name="${win} = CDwindow-2F8426D80B8B0DE048B05B9ACC773784" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${win}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:07.708" endtime="20210111 23:04:07.708"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>${win}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:07.708" endtime="20210111 23:04:07.784"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${urlE}</var>
+</assign>
+<msg timestamp="20210111 23:04:07.804" level="INFO">${urlE} = https://robotframework.org/</msg>
+<status status="PASS" starttime="20210111 23:04:07.785" endtime="20210111 23:04:07.804"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${urlD}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:07.804" endtime="20210111 23:04:07.805"></status>
+</kw>
+<status status="PASS" starttime="20210111 23:04:07.708" endtime="20210111 23:04:07.806"></status>
+</kw>
+<kw name="${win} = CDwindow-4D49B583C224B761B88873E2650F472E" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${win}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:07.806" endtime="20210111 23:04:07.810"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>${win}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:07.810" endtime="20210111 23:04:07.934"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${urlE}</var>
+</assign>
+<msg timestamp="20210111 23:04:07.953" level="INFO">${urlE} = http://robotframework.org/robotframework/#user-guide</msg>
+<status status="PASS" starttime="20210111 23:04:07.935" endtime="20210111 23:04:07.953"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${urlD}</arg>
+</arguments>
+<status status="PASS" starttime="20210111 23:04:07.953" endtime="20210111 23:04:07.954"></status>
+</kw>
+<status status="PASS" starttime="20210111 23:04:07.806" endtime="20210111 23:04:07.954"></status>
+</kw>
+<status status="PASS" starttime="20210111 23:04:07.708" endtime="20210111 23:04:07.954"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210111 23:04:07.956" endtime="20210111 23:04:15.786"></status>
+</kw>
+<status status="PASS" starttime="20210111 23:03:31.451" endtime="20210111 23:04:15.788" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210111 23:03:30.858" endtime="20210111 23:04:15.790"></status>
+</suite>
+<status status="PASS" starttime="20210111 23:03:30.816" endtime="20210111 23:04:15.795"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Windows">Windows</stat>
+<stat pass="1" fail="0" id="s1-s1" name="windowHandling">Windows.windowHandling</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
